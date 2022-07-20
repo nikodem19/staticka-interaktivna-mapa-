@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Mapa pamiatok Slovenska</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mapa-div">
+
+        <div class="okno" id="okno" style="display:none;">
+          <div class="text">
+            <i class="fa fa-times" onclick="zavriOkno('okno')"></i>
+            <h3 id="nadpis">Nadpis</h3>
+            <p id="text"></p>
+            <p class="zobrazViac" id="zobrazViac">Zobraziť viac...</p>
+          </div>
+        </div>
+
+        <div class="viac" id="viac" style="display:none;">
+          <div class="text">
+            <i class="fa fa-times" onclick="zavriOkno('viac')"></i>
+            <h2 id="nadpis-viac">Nadpis</h2>
+            <img class="obrazok" id="obrazok" src="" alt="empty">
+            <div class="lavy">
+              <h2 id="oNas">Info</h2>
+              <div id="text-lavy"></div>
+            </div>
+            <div class="pravy" id="pravy">
+              <h2 id="ipsum">Lorem Ipsum</h2>
+              <div id="text-pravy"></div>
+            </div>
+          </div>
+        </div>
+
+        <img src="img/mapa.png" alt="Mapa pamiatok Slovenska" usemap="#image-map">
+        <map name="image-map" id="Map">
+            <area target="" alt="Spišský hrad" title="Spišský hrad" href="" coords="788,131,34" shape="circle" onclick="return oknoSpisskyHrad()">
+            <area target="" alt="Slovenský raj" title="Slovenský raj" href="" coords="706,154,34" shape="circle" onclick="return oknoSlovenskyRaj()">
+            <area target="" alt="Banská Štiavnica" title="Banská Štiavnica" href="" coords="430,299,34" shape="circle" onclick="return oknoBanskaStiavnica()">
+            <area target="" alt="Vlkolínec" title="Vlkolínec" href="" coords="500,119,34" shape="circle" onclick="return oknoVlkolinec()">
+            <area target="" alt="Kúpele Piešťany" title="Kúpele Piešťany" href="" coords="218,233,34" shape="circle" onclick="return oknoPiestany()">
+            <area target="" alt="Bardejov" title="Bardejov" href="" coords="896,43,34" shape="circle" onclick="return oknoBardejov()">
+            <area target="" alt="Košice" title="Košice" href="" coords="895,218,34" shape="circle" onclick="return oknoKosice()">
+            <area target="" alt="Tatry" title="Tatry" href="" coords="642,91,34" shape="circle" onclick="return oknoTatry()">
+            <area target="" alt="Bratislava" title="Bratislava" href="" coords="117,382,34" shape="circle" onclick="return oknoBratislava()">
+            <area target="" alt="Jaskyne Slovenského krasu" title="Jaskyne Slovenského krasu" href="" coords="762,255,34" shape="circle" onclick="return oknoKras()">
+        </map>
+      </div>
+    </div>
+  </body>
+</html>
